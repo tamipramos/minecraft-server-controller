@@ -1,0 +1,61 @@
+{
+  "steps": [
+    {
+      "settings": [
+        {
+          "func": "check_operative_system",
+          "description": "Comprobando su sistema operativo",
+          "automatic_callable": true,
+          "args": []
+        },
+        {
+          "func": "download_file_chromedriver",
+          "description": "Descargando ChromeDriver...",
+          "automatic_callable": false,
+          "args": []
+        },
+        {
+          "func": "get_minecraft_versions",
+          "description": "Buscando versiones de Minecraft",
+          "automatic_callable": true,
+          "args": []
+        }
+      ]
+    },
+    {
+      "installation": [
+        {
+          "func": "check_current_installation",
+          "description": "Comprobando si existe servidor de Minecraft",
+          "automatic_callable": true,
+          "args": []
+        },
+        {
+          "func": "download_minecraft_server",
+          "description": "Descargando Minecraft Server ",
+          "automatic_callable": true,
+          "args": []
+        },
+        {
+          "func": "download_file_minecraft_server",
+          "description": "Descargando Minecraft Server...",
+          "automatic_callable": false,
+          "args": []
+        },
+        {
+          "func": "_first_time_execute_minecraft_server",
+          "description": "Inicializando Minecraft Server por primera vez",
+          "automatic_callable": false,
+          "args": []
+        },
+        {
+          "func": "_change_eula_to_true",
+          "description": "Configurando EULA...",
+          "automatic_callable": false,
+          "args": []
+        }
+      ]
+    }
+    
+  ]
+}
